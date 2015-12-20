@@ -15,23 +15,123 @@ body {
 }
 
 .page-header {
-  height: 120px;
+  height: 256px;
+  min-width: 1200px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 10px;
-  background-color: rgba(0, 0, 0, 0.8);  
+  background-color: rgba(0, 0, 0, 0.6);  
 }
 
 .page-header h1 {
   display: inline-block;
   font-family: Consolas;
   font-size: 54px;
-  /*font-weight: bold;*/
   color: #fff;
-  margin-left: 20px;
+  position: relative;
+}
+
+.page-header p {
+  font-size: 18px;
+  font-family: Consolas;
+  color: #666;
+  font-style: italic;
 }
 
 #logo {
+  display: inline-block;
+  height: 256px;
+  width: 256px;
   position: relative;
   top: -13px;
+  background: url(../img/logo.png);
+}
+
+.label-pool {
+  height: 256px;
+}
+
+.label-pool .label {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.card-pool .card {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-size:100% 100%;
+  background-color: #fff;
+}
+
+#angularjs {
+  background-image: url(../img/angularjs.png);
+  background-color: rgba(44,44,44,0.75);
+}
+#backbonejs {
+  background-image: url(../img/backbone.js.png);
+}
+#boostrap { background-image: url(../img/boostrap.png); }
+#bower {
+  background-image: url(../img/bower.png);
+  background-color: rgba(255,204,47,0.75);
+}
+#cohort { background-image: url(../img/cohort.png); }
+#cordova {
+  background-image: url(../img/cordova.png);
+}
+#css3 {
+  background-image: url(../img/css3.png);
+}
+#es6 { background-image: url(../img/es6.png); }
+#grunt {
+  background-image: url(../img/grunt.png);
+  background-color: rgba(251,169,25, 0.75);
+}
+#handlebars { background-image: url(../img/handlebars.png); }
+#html5 { background-image: url(../img/html5.png); }
+#ionic {
+  background-image: url(../img/ionic.png);
+}
+#jquery {
+  background-image: url(../img/jquery.png);
+
+}
+#jquery-mobile {
+  background-image: url(../img/jquery-mobile.png);
+  background-color: rgba(16,128,64,0.75);
+}
+#jquery-ui {
+  background-image: url(../img/jquery-ui.png);
+  background-color: rgba(178,73,38,0.75);
+}
+#json-loop {
+  background-image: url(../img/json-loop.png);
+}
+#karma {
+  background-image: url(../img/karma.png);
+}
+#lawe { background-image: url(../img/lawe.png); }
+#meanjs {
+  background-image: url(../img/mean.js.png);
+}
+#meteor-cantas { background-image: url(../img/meteor-cantas.png); }
+#mongodb {
+  background-image: url(../img/mongodb.png);
+  background-color: rgba(64,40,23,0.75);
+}
+#my-concerns { background-image: url(../img/my-concerns.png); }
+#qunit {
+  background-image: url(../img/qunit.png);
+  background-color: rgba(57,15,57,0.75);
+}
+#reactjs { background-image: url(../img/react.js.png); }
+#requirejs { background-image: url(../img/require.js.png); }
+#ueis { background-image: url(../img/ueis.png); }
+#yeoman {
+  background-image: url(../img/yeoman.png);
+  background-color: #fff;
 }
