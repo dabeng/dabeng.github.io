@@ -56,15 +56,19 @@ body {
   line-height: 32px;
 }
 
-.card-pool .card {
+#js-nutrients {
+  margin-left: calc(50% - 585px);
+}
+
+#js-nutrients td {
+  padding: 5px;
+}
+
+#js-nutrients td a {
   display: inline-block;
-  width: 128px;
-  height: 128px;
-  float: left;
-  margin-top: 10px;
-  margin-left: 10px;
+  width: 120px;
+  height: 120px;
   background-size:100% 100%;
-  background-color: #fff;
 }
 
 #angularjs {
@@ -73,32 +77,51 @@ body {
 }
 #backbonejs {
   background-image: url(../img/backbone.js.png);
+  background-color: #fff;
 }
-#boostrap { background-image: url(../img/boostrap.png); }
+#boostrap {
+  background-image: url(../img/boostrap.png);
+  background-color: #fff;
+}
 #bower {
   background-image: url(../img/bower.png);
   background-color: rgba(255,204,47,0.75);
 }
-#cohort { background-image: url(../img/cohort.png); }
+#cohort {
+  background-image: url(../img/cohort.png);
+  background-color: #fff;
+}
 #cordova {
   background-image: url(../img/cordova.png);
+  background-color: #fff;
 }
 #css3 {
   background-image: url(../img/css3.png);
+  background-color: #fff;
 }
-#es6 { background-image: url(../img/es6.png); }
+#es6 {
+  background-image: url(../img/es6.png);
+  background-color: #fff;
+}
 #grunt {
   background-image: url(../img/grunt.png);
   background-color: rgba(251,169,25, 0.75);
 }
-#handlebars { background-image: url(../img/handlebars.png); }
-#html5 { background-image: url(../img/html5.png); }
+#handlebars {
+  background-image: url(../img/handlebars.png);
+  background-color: #fff;
+}
+#html5 {
+  background-image: url(../img/html5.png);
+  background-color: #fff;
+}
 #ionic {
   background-image: url(../img/ionic.png);
+  background-color: #fff;
 }
 #jquery {
   background-image: url(../img/jquery.png);
-
+  background-color: #fff;
 }
 #jquery-mobile {
   background-image: url(../img/jquery-mobile.png);
@@ -113,24 +136,38 @@ body {
 }
 #karma {
   background-image: url(../img/karma.png);
+  background-color: #fff;
 }
-#lawe { background-image: url(../img/lawe.png); }
+#lawe {
+  background-image: url(../img/lawe.png);
+}
 #meanjs {
   background-image: url(../img/mean.js.png);
+  background-color: #fff;
 }
-#meteor-cantas { background-image: url(../img/meteor-cantas.png); }
+#meteor-cantas {
+  background-image: url(../img/meteor-cantas.png);
+}
 #mongodb {
   background-image: url(../img/mongodb.png);
-  background-color: rgba(64,40,23,0.75);
+  background-color: #fff;
 }
-#my-concerns { background-image: url(../img/my-concerns.png); }
+#my-concerns {
+  background-image: url(../img/my-concerns.png);
+}
 #qunit {
   background-image: url(../img/qunit.png);
   background-color: rgba(57,15,57,0.75);
 }
-#reactjs { background-image: url(../img/react.js.png); }
-#requirejs { background-image: url(../img/require.js.png); }
-#ueis { background-image: url(../img/ueis.png); }
+#reactjs {
+  background-image: url(../img/react.js.png);
+}
+#requirejs {
+  background-image: url(../img/require.js.png);
+}
+#ueis {
+  background-image: url(../img/ueis.png);
+}
 #yeoman {
   background-image: url(../img/yeoman.png);
   background-color: #fff;
