@@ -118,7 +118,7 @@ body {
 
 #angularjs {
   background-image: url(../img/angularjs.png);
-  background-color: rgba(44,44,44,0.75);
+  background-color: rgba(44,44,44,0.7);
 }
 #backbonejs {
   background-image: url(../img/backbone.js.png);
@@ -126,11 +126,11 @@ body {
 }
 #boostrap {
   background-image: url(../img/boostrap.png);
-  background-color: rgba(91,66,130,0.75);
+  background-color: rgba(91,66,130,0.3);
 }
 #bower {
   background-image: url(../img/bower.png);
-  background-color: rgba(255,204,47,0.75);
+  background-color: rgba(255,204,47,0.7);
 }
 #cohort {
   background-image: url(../img/cohort.png);
@@ -178,9 +178,9 @@ body {
 #json-loop {
   background-image: url(../img/json-loop.png);
 }
-#karma {
-  background-image: url(../img/karma.png);
-  background-color: #fff;
+#nodejs {
+  background-image: url(../img/nodejs.png);
+  background-color: rgba(51,51,51,0.7);
 }
 #lawe {
   background-image: url(../img/lawe.png);
@@ -192,9 +192,9 @@ body {
 #meteor-cantas {
   background-image: url(../img/meteor-cantas.png);
 }
-#mongodb {
-  background-image: url(../img/mongodb.png);
-  background-color: #fff;
+#mocha {
+  background-image: url(../img/mocha.png);
+  background-color: rgba(134,100,71,0.3);
 }
 #my-concerns {
   background-image: url(../img/my-concerns.png);
@@ -204,8 +204,8 @@ body {
   background-color: rgba(57,15,57,0.5);
 }
 #reactjs {
-  background-image: url(../img/react.js.png);
-  background-color: rgba(34,34,34,0.75);
+  background-image: url(../img/reactjs.png);
+  background-color: rgba(34,34,34,0.7);
 }
 #requirejs {
   background-image: url(../img/require.js.png);
@@ -215,5 +215,13 @@ body {
 }
 #yeoman {
   background-image: url(../img/yeoman.png);
+  background-color: #fff;
+}
+#mongodb {
+  background-image: url(../img/mongodb.png);
+  background-color: rgba(64,40,23,0.7);
+}
+#karma {
+  background-image: url(../img/karma.png);
   background-color: #fff;
 }
