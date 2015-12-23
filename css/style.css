@@ -65,13 +65,12 @@ body {
 }
 
 #js-nutrients {
-  margin-left: calc(50% - 585px);
+  margin-left: calc(50% - 576px);
 }
 
 #js-nutrients td {
-  padding: 5px;
-  width: 130px;
-  height: 130px;
+  width: 128px;
+  height: 128px;
 }
 
 #js-nutrients td a {
@@ -80,80 +79,6 @@ body {
   height: 100%;
   background-size:100% 100%;
 }
-
-
-
-.lineF, .lineS
-        {
-            position: absolute;
-            visibility: hidden;
-        }
-        .lineS
-        {
-            top: 182px;
-            left: 105px;
-        }
-        .hex1, .hex2, .hex3, .overlay
-        {
-            width: 120px;
-            height: 150px;
-            overflow: hidden;
-            backface-visibility: hidden;/* without this, the sides of hexagon will be serrated */
-        }
-        .hex1, .hex2
-        {
-            visibility: hidden;
-        }
-        .hex1
-        {
-            transform: rotate(120deg);
-            float: left;
-            margin-left: 5px;
-            -ms-transform: rotate(120deg);
-            -moz-transform: rotate(120deg);
-            -webkit-transform: rotate(120deg);
-        }
-        .hex2
-        {
-            transform: rotate(-60deg);
-            -ms-transform: rotate(-60deg);
-            -moz-transform: rotate(-60deg);
-            -webkit-transform: rotate(-60deg);
-        }
-        .hex3
-        {
-            transform: rotate(-60deg);
-            background: no-repeat 50% center;
-            background-size: 90% auto;
-            -ms-transform: rotate(-60deg);
-            -moz-transform: rotate(-60deg);
-            -webkit-transform: rotate(-60deg);
-            visibility: visible;
-        }
-        .overlay
-        {
-            transition: all 250ms ease-in-out 0s;
-            display: none;
-            position: relative;
-        }
-        .overlay:hover
-        {
-            background-color: rgba(0,0,0,0.6);
-        }
-        .hex3:hover .overlay
-        {
-            display: block;
-        }
-        .hex3 a
-        {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-        }
-
-
-
-
 
 #angularjs {
   background-image: url(../img/angularjs.png);
@@ -165,7 +90,7 @@ body {
 }
 #boostrap {
   background-image: url(../img/boostrap.png);
-  background-color: rgba(44,44,44,0.75);
+  background-color: rgba(91,66,130,0.75);
 }
 #bower {
   background-image: url(../img/bower.png);
@@ -173,15 +98,14 @@ body {
 }
 #cohort {
   background-image: url(../img/cohort.png);
-  background-color: #fff;
 }
 #cordova {
   background-image: url(../img/cordova.png);
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.3);
 }
 #css3 {
   background-image: url(../img/css3.png);
-  background-color: #fff;
+  background-color: rgba(53,156,214,0.3);
 }
 #es6 {
   background-image: url(../img/es6.png);
@@ -189,7 +113,7 @@ body {
 }
 #grunt {
   background-image: url(../img/grunt.png);
-  background-color: rgba(251,169,25, 0.75);
+  background-color: rgba(251,169,25, 0.3);
 }
 #handlebars {
   background-image: url(../img/handlebars.png);
@@ -197,7 +121,7 @@ body {
 }
 #html5 {
   background-image: url(../img/html5.png);
-  background-color: #fff;
+  background-color: rgba(241,101,41,0.3);
 }
 #ionic {
   background-image: url(../img/ionic.png);
@@ -205,15 +129,15 @@ body {
 }
 #jquery {
   background-image: url(../img/jquery.png);
-  background-color: #fff;
+  background-color: rgba(7,105,173,0.3);
 }
 #jquery-mobile {
   background-image: url(../img/jquery-mobile.png);
-  background-color: rgba(16,128,64,0.75);
+  background-color: rgba(16,128,64,0.3);
 }
 #jquery-ui {
   background-image: url(../img/jquery-ui.png);
-  background-color: rgba(178,73,38,0.75);
+  background-color: rgba(178,73,38,0.3);
 }
 #json-loop {
   background-image: url(../img/json-loop.png);
@@ -241,10 +165,11 @@ body {
 }
 #qunit {
   background-image: url(../img/qunit.png);
-  background-color: rgba(57,15,57,0.75);
+  background-color: rgba(57,15,57,0.5);
 }
 #reactjs {
   background-image: url(../img/react.js.png);
+  background-color: rgba(34,34,34,0.75);
 }
 #requirejs {
   background-image: url(../img/require.js.png);
