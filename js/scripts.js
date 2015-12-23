@@ -17,6 +17,10 @@
 
   $(function() {
     $('.label-pool').on('click', '.label', filterNutrients);
+    $('#cohort').on('click',function() {
+      $('.below-head').find('a').addClass('masked');
+      $('#above-head').addClass('show');
+    });
   });
 
 })(jQuery);

@@ -64,6 +64,37 @@ body {
   font-size: 32px;
 }
 
+#above-head {
+  width: 384px;
+  height: 384px;
+  position: absolute;
+  left: calc(50% - 576px);
+  overflow: hidden;
+  display: hidden;
+}
+
+#example {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/cohort.png);
+  background-size: 100% 100%;
+  right: -384px;
+  transition: right 0.5s;
+  -moz-transition: right 0.5s;
+  -webkit-transition: right 0.5s;
+  -o-transition: right 0.5s;
+}
+
+#above-head.show {
+  display: inline-block;
+}
+
+#above-head.show #example {
+    right: 0px;
+}
+
 #js-nutrients {
   margin-left: calc(50% - 576px);
 }
@@ -78,6 +109,11 @@ body {
   width: 100%;
   height: 100%;
   background-size:100% 100%;
+}
+
+#js-nutrients td a.masked {
+  background-image: none;
+  background-color: transparent;
 }
 
 #angularjs {
