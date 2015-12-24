@@ -15,18 +15,27 @@
     }
   }
 
+  function showMyRepo(event) {
+    $('.below-head').find('a').addClass('masked');
+    $(event.target).addClass('slide-out');
+    $('#above-head').find('a').css('background-image','url(img/' + event.target.id + '.png)')
+    $('#above-head,#above-content').addClass('slide-in');
+  }
+
+  function hideMyRepo() {
+    $('.below-head').find('a').removeClass('masked');
+    $('.myrepo.slide-out').removeClass('slide-out');
+    $('#above-head,#above-content').removeClass('slide-in');
+  }
+
   $(function() {
+
     $('.label-pool').on('click', '.label', filterNutrients);
-    $('#cohort').on('click',function() {
-      $('.below-head').find('a').addClass('masked');
-      $(this).addClass('slide-out');
-      $('#above-head,#above-content').addClass('slide-in');
-    });
-    $('#above-content').find('.btn-return').on('click',function() {
-      $('.below-head').find('a').removeClass('masked');
-      $('#cohort').removeClass('slide-out');
-      $('#above-head,#above-content').removeClass('slide-in');
-    });
+
+    $('.myrepo').on('click', showMyRepo);
+
+    $('#above-content').find('.btn-return').on('click', hideMyRepo);
+
   });
 
 })(jQuery);
