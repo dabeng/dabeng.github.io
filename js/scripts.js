@@ -19,7 +19,13 @@
     $('.label-pool').on('click', '.label', filterNutrients);
     $('#cohort').on('click',function() {
       $('.below-head').find('a').addClass('masked');
-      $('#above-head').addClass('show');
+      $(this).addClass('slide-out');
+      $('#above-head,#above-content').addClass('slide-in');
+    });
+    $('#above-content').find('.btn-return').on('click',function() {
+      $('.below-head').find('a').removeClass('masked');
+      $('#cohort').removeClass('slide-out');
+      $('#above-head,#above-content').removeClass('slide-in');
     });
   });
 
