@@ -122,7 +122,7 @@ body {
 }
 
 #above-content .repo-desc {
-  color: #eee;
+  color: #aaa;
   font-family: Consolas;
   font-style: italic;
   font-size: 24px;
@@ -168,6 +168,10 @@ body {
 
 #repo-list a.masked img {
   opacity: 0;
+}
+
+#repo-list td .repo-desc {
+  display: none;
 }
 
 #angularjs img {

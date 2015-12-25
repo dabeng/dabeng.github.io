@@ -20,14 +20,16 @@
   function showMyRepo(event) {
     $('.below-head').find('a').addClass('masked');
     $(event.target).addClass('slide-out');
+    $('#above-head').find('a').attr('href',$(event.target).parent().data('repo-address'));
     $('#above-head').find('img').attr('src',$(event.target).attr('src'));
+    $('#above-content').find('.repo-desc').html($(event.target).siblings('.repo-desc').html());
     $('#above-head,#above-content').addClass('slide-in');
     $('.label-pool').find('.label').addClass('disabled');
   }
 
   function hideMyRepo() {
     $('.below-head').find('a').removeClass('masked');
-    $('.myrepo.slide-out').removeClass('slide-out');
+    $('.myrepo').find('img.slide-out').removeClass('slide-out');
     $('#above-head,#above-content').removeClass('slide-in');
     $('.label-pool').find('.label').removeClass('disabled');
   }
