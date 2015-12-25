@@ -56,6 +56,11 @@ body {
   line-height: 32px;
 }
 
+.label-pool .label.disabled {
+  color: #aaa;
+  background-color: #666;
+}
+
 .label-pool .label:hover {
   cursor: pointer;
 }

@@ -2,8 +2,11 @@
 
 (function($){
 
-  function filterNutrients(event) {
+  function filterRepos(event) {
     var label = $(event.target);
+    if (label.is('.disabled')) {
+      return;
+    }
     var hiddenRepos = $('#repo-list').find('a').not('.' + label.data('label'));
     if (!label.is('.active')) {
       hiddenRepos.addClass('fade-out');
@@ -19,17 +22,19 @@
     $(event.target).addClass('slide-out');
     $('#above-head').find('img').attr('src',$(event.target).attr('src'));
     $('#above-head,#above-content').addClass('slide-in');
+    $('.label-pool').find('.label').addClass('disabled');
   }
 
   function hideMyRepo() {
     $('.below-head').find('a').removeClass('masked');
     $('.myrepo.slide-out').removeClass('slide-out');
     $('#above-head,#above-content').removeClass('slide-in');
+    $('.label-pool').find('.label').removeClass('disabled');
   }
 
   $(function() {
 
-    $('.label-pool').on('click', '.label', filterNutrients);
+    $('.label-pool').on('click', '.label', filterRepos);
 
     $('.myrepo').on('click', showMyRepo);
 
