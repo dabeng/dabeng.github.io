@@ -7,22 +7,23 @@
     if (label.is('.disabled')) {
       return;
     }
-    var hiddenRepos = $('#repo-list').find('a').not('.' + label.data('label'));
+
+    $('#repo-list').find('a.fade-out').removeClass('fade-out');
     if (!label.is('.active')) {
-      hiddenRepos.addClass('fade-out');
+      $('#repo-list').find('a').not('.' + label.data('label')).addClass('fade-out');
       label.addClass('active').siblings().removeClass('active');
     } else {
-      hiddenRepos.removeClass('fade-out');
       label.removeClass('active');
     }
   }
 
   function showMyRepo(event) {
+    var $repoLogo = $(event.target);
     $('.below-head').find('a').addClass('masked');
-    $(event.target).addClass('slide-out');
-    $('#above-head').find('a').attr('href',$(event.target).parent().data('repo-address'));
-    $('#above-head').find('img').attr('src',$(event.target).attr('src'));
-    $('#above-content').find('.repo-desc').html($(event.target).siblings('.repo-desc').html());
+    $repoLogo.addClass('slide-out');
+    $('#above-head').find('a').attr('href',$repoLogo.parent().data('repo-address'));
+    $('#above-head').find('img').attr('src',$repoLogo.attr('src'));
+    $('#above-content').find('.repo-desc').html($repoLogo.siblings('.repo-desc').html());
     $('#above-head,#above-content').addClass('slide-in');
     $('.label-pool').find('.label').addClass('disabled');
   }
