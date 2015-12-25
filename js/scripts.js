@@ -4,13 +4,12 @@
 
   function filterNutrients(event) {
     var label = $(event.target);
-    var nutrient = label.data('nutrient');
-    var hiddenN = $('#js-nutrients').find('a').not('.' + nutrient);
+    var hiddenRepos = $('#repo-list').find('a').not('.' + label.data('label'));
     if (!label.is('.active')) {
-      hiddenN.fadeOut();
+      hiddenRepos.addClass('fade-out');
       label.addClass('active').siblings().removeClass('active');
     } else {
-      hiddenN.fadeIn();
+      hiddenRepos.removeClass('fade-out');
       label.removeClass('active');
     }
   }
@@ -18,7 +17,7 @@
   function showMyRepo(event) {
     $('.below-head').find('a').addClass('masked');
     $(event.target).addClass('slide-out');
-    $('#above-head').find('a').css('background-image','url(img/' + event.target.id + '.png)')
+    $('#above-head').find('img').attr('src',$(event.target).attr('src'));
     $('#above-head,#above-content').addClass('slide-in');
   }
 

@@ -78,21 +78,19 @@ body {
   z-index: 1;
 }
 
-#above-head a {
+#above-head img {
   position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
+  width: 384px;
+  height: 384px;
   right: -384px;
   opacity: 0;
-  transition: all 1s;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
+  transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
 }
 
-#above-head.slide-in a {
+#above-head.slide-in img {
   right: 0px;
   opacity: 1;
   z-index: 1;
@@ -106,10 +104,10 @@ body {
   right: calc(50% - 576px);
   display: hidden;
   opacity: 0;
-  transition: all 1s;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
+  transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
 }
 
 #above-content.slide-in {
@@ -138,153 +136,125 @@ body {
   cursor: pointer;
 }
 
-#js-nutrients {
+#repo-list {
   margin-left: calc(50% - 576px);
 }
 
-#js-nutrients td {
+#repo-list img {
   width: 128px;
   height: 128px;
-}
-
-#js-nutrients td a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  background-size:100% 100%;
   position: relative;
   left: 0px;
   opacity: 1;
-  transition: all 1s;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
+  transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
 }
 
-#js-nutrients td a.slide-out {
+#repo-list td a.slide-out img {
   left: -128px;
   opacity: 0;
 }
 
-#js-nutrients td a.masked {
-  background-image: none;
-  background-color: transparent;
+#repo-list td a.fade-out img {
+  opacity: 0;
 }
 
-#angularjs {
-  background-image: url(../img/angularjs.png);
+#repo-list a.masked img {
+  opacity: 0;
+}
+
+#angularjs img {
   background-color: rgba(44,44,44,0.7);
 }
-#backbonejs {
-  background-image: url(../img/backbone.js.png);
+#backbonejs img {
   background-color: #fff;
 }
-#bootstrap {
-  background-image: url(../img/bootstrap.png);
+#bootstrap img {
   background-color: rgba(92,66,131,0.3);
 }
-#bower {
-  background-image: url(../img/bower.png);
+#bower img {
   background-color: rgba(255,204,47,0.7);
 }
-#cohort {
-  background-image: url(../img/cohort.png);
+#cohort img {
+  /*background-image: url(../img/cohort.png);*/
 }
-#cordova {
-  background-image: url(../img/cordova.png);
+#cordova img {
   background-color: rgba(255,255,255,0.3);
 }
-#css3 {
-  background-image: url(../img/css3.png);
+#css3 img {
   background-color: rgba(53,156,214,0.3);
 }
-#es6 {
-  background-image: url(../img/es6.png);
+#es6 img {
   background-color: #fff;
 }
-#grunt {
-  background-image: url(../img/grunt.png);
+#grunt img {
   background-color: rgba(251,169,25, 0.3);
 }
-#handlebars {
-  background-image: url(../img/handlebars.png);
+#handlebars img {
   background-color: #fff;
 }
-#html5 {
-  background-image: url(../img/html5.png);
+#html5 img {
   background-color: rgba(241,101,41,0.3);
 }
-#ionic {
-  background-image: url(../img/ionic.png);
+#ionic img {
   background-color: #fff;
 }
-#jquery {
-  background-image: url(../img/jquery.png);
+#jquery img {
   background-color: rgba(7,105,173,0.3);
 }
-#jquery-mobile {
-  background-image: url(../img/jquery-mobile.png);
+#jquery-mobile img {
   background-color: rgba(16,128,64,0.3);
 }
-#jquery-ui {
-  background-image: url(../img/jquery-ui.png);
+#jquery-ui img {
   background-color: rgba(178,73,38,0.3);
 }
-#json-loop {
-  background-image: url(../img/json-loop.png);
+#json-loop img {
+  /*background-image: url(../img/json-loop.png);*/
 }
-#nodejs {
-  background-image: url(../img/nodejs.png);
+#nodejs img {
   background-color: rgba(51,51,51,0.7);
 }
-#lawe {
-  background-image: url(../img/lawe.png);
+#lawe img {
+  /*background-image: url(../img/lawe.png);*/
 }
-#meanjs {
-  background-image: url(../img/mean.js.png);
+#meanjs img {
   background-color: #fff;
 }
-#meteor-cantas {
-  background-image: url(../img/meteor-cantas.png);
+#meteor-cantas img {
+  /*background-image: url(../img/meteor-cantas.png);*/
 }
-#mocha {
-  background-image: url(../img/mocha.png);
+#mocha img {
   background-color: rgba(134,100,71,0.3);
 }
-#my-concerns {
-  background-image: url(../img/my-concerns.png);
+#my-concerns img  {
+  /*background-image: url(../img/my-concerns.png);*/
 }
-#qunit {
-  background-image: url(../img/qunit.png);
+#qunit img {
   background-color: rgba(57,15,57,0.5);
 }
-#reactjs {
-  background-image: url(../img/reactjs.png);
+#reactjs img {
   background-color: rgba(34,34,34,0.7);
 }
-#requirejs {
-  background-image: url(../img/require.js.png);
+#requirejs img {
+  /*background-image: url(../img/require.js.png);*/
 }
-#ueis {
-  background-image: url(../img/ueis.png);
+#ueis img {
+  /*background-image: url(../img/ueis.png);*/
 }
-#yeoman {
-  background-image: url(../img/yeoman.png);
+#yeoman img {
   background-color: #fff;
 }
-#mongodb {
-  background-image: url(../img/mongodb.png);
+#mongodb img {
   background-color: rgba(64,40,23,0.7);
 }
-#karma {
-  background-image: url(../img/karma.png);
+#karma img {
   background-color: #fff;
 }
-#less {
-  background-image: url(../img/less.png);
+#less img {
   background-color: rgba(29,54,93,0.3);
 }
-#meteor {
-  background-image: url(../img/meteor.png);
+#meteor img {
   background-color: #fff;
 }
